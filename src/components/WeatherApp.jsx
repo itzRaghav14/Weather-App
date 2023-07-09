@@ -1,9 +1,6 @@
 import React from "react";
 
 const WeatherApp = ({ location, data }) => {
-  console.log(location);
-  console.log(data);
-
   const kelvinToCelsius = (temp) => {
     return `${(temp - 273).toFixed(1)}°C`;
   };
@@ -11,8 +8,6 @@ const WeatherApp = ({ location, data }) => {
   if (location == "" || data.ok == false) {
     return null;
   }
-
-  console.log('*');
 
   return (
     <div className="flex justify-between items-center">

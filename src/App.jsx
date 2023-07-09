@@ -15,10 +15,8 @@ function App() {
         .then(res => {
           setData(data => res.data);
           data.ok = true;
-          console.log(data);
         })
         .catch(err => {
-          console.log(err);
           setData({});
           data.ok = false;
           setLocation('');
