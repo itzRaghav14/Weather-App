@@ -4,18 +4,14 @@ import { getFormattedWeatherData } from "./weatherAPI";
 import ErrorCard from "./components/ErrorCard";
 
 function App() {
-  const [city, setCity] = useState("delhi");
   const [weather, setWeather] = useState(null);
+  const [city, setCity] = useState("delhi");
   const [units, setUnits] = useState("metric");
   const [bg, setBg] = useState("hot");
 
   useEffect(() => {
     const fetchWeatherData = async () => {
       const data = await getFormattedWeatherData(city, units);
-  
-      console.log(data);
-      
-      console.log('*');
       setWeather(data);
   
       const threshold = units === "metric" ? 20 : 68;

@@ -21,7 +21,6 @@ export const getFormattedWeatherData = async (city, units) => {
 
     const { description, icon } = weather[0];
     const iconURL = makeIconURL(icon);
-    console.log(data);
 
     return {
       description,
@@ -39,7 +38,6 @@ export const getFormattedWeatherData = async (city, units) => {
       status: 200
     };
   } catch (err) {
-    console.log(err);
     return {
       status: err.response.status
     }
