@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hot': "url('./assets/images/bg-hot.jpg')",
-        'cold': "url('./assets/images/bg-cold.jpg')",
+        'hot': "url('https://image.lexica.art/full_jpg/be9b64e1-d8fd-448e-afcd-585d089be8d4')",
+        'cold': "url('https://image.lexica.art/full_jpg/211eda68-aa32-4d9d-b2bf-ad1ed4918151')",
       },
       borderWidth: {
         '0.5': '0.5px'
